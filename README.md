@@ -1,10 +1,10 @@
-# Laravel Nova Polygon Map Field
+# Laravel Nova Polygon Map 1:n Field
 
 ## Installation
 Use composer to install the package.
 
 ```shell
-composer require moathdev/laravel-nova-Polygon-map-field
+composer require genesiscz/laravel-nova-polygon-map-field
 ```
 
 
@@ -12,8 +12,8 @@ composer require moathdev/laravel-nova-Polygon-map-field
 
 ```php 
 
-use Moathdev\PolygonMap\Polygon;
-use Moathdev\PolygonMap\Point;
+use Genesiscz\PolygonMap\Polygon;
+use Genesiscz\PolygonMap\Point;
 
 Polygon::make('map'),
 // or
