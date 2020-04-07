@@ -1,5 +1,5 @@
 {
-    "name": "moathdev/laravel-nova-polygon-map-field",
+    "name": "genesiscz/laravel-nova-polygon-map-field",
     "description": "Laravel Nova Polygon map field.",
     "keywords": [
         "laravel",
@@ -14,13 +14,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Moathdev\\PolygonMap\\": "src/"
+            "Genesiscz\\PolygonMap\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Moathdev\\PolygonMap\\FieldServiceProvider"
+                "Genesiscz\\PolygonMap\\FieldServiceProvider"
             ]
         }
     },
