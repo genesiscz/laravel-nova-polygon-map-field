@@ -1,6 +1,6 @@
 <?php
 
-namespace Moathdev\PolygonMap;
+namespace Genesiscz\PolygonMap;
 
 use Grimzy\LaravelMysqlSpatial\Types\LineString as SpatialLineString;
 use Grimzy\LaravelMysqlSpatial\Types\Point as SpatialPoint;

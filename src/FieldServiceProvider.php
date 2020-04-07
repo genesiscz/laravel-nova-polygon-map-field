@@ -1,6 +1,6 @@
 <?php
 
-namespace Moathdev\PolygonMap;
+namespace Genesiscz\PolygonMap;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
