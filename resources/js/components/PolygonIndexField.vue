@@ -1,5 +1,6 @@
 <template>
   <gmap-map
+    v-if="paths"
     :center="defaultCenter"
     :zoom="12"
     ref="map"

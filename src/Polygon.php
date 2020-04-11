@@ -51,14 +51,15 @@ class Polygon extends Field
 
         if (!$value) {
             // Default area in Riyadh
-            return new SpatialPolygon([
+            return null;
+            /*new SpatialPolygon([
                 new SpatialLineString([
                     new SpatialPoint(24.7267943, 46.8128664),
                     new SpatialPoint(24.7267943, 46.9128664),
                     new SpatialPoint(24.8267943, 46.8128664),
                     new SpatialPoint(24.7267943, 46.8128664),
                 ]),
-            ]);
+            ]);*/
         }
 
         return $value;
