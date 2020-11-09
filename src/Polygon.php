@@ -7,6 +7,7 @@ use Grimzy\LaravelMysqlSpatial\Types\Point as SpatialPoint;
 use Grimzy\LaravelMysqlSpatial\Types\Polygon as SpatialPolygon;
 use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Log;
 
 class Polygon extends Field
 {
@@ -33,8 +34,9 @@ class Polygon extends Field
     ) {
         if ($request->exists($requestAttribute)) {
             $value = $request[$requestAttribute];
-
-            $model->{$attribute} = SpatialPolygon::fromJson($value);
+            if (!empty($value["coordinates"])) {
+                $model->{$attribute} = SpatialPolygon::fromJson($value);
+            }
         }
     }
 
